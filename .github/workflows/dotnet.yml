@@ -1,0 +1,40 @@
+name: 🏭 Build
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 9.x
+          cache: true
+
+      - name: Restore dependencies
+        run: dotnet restore --locked-mode
+
+      - name: Build
+        run: dotnet build --no-restore -c Release
+
+      - name: Test
+        run: dotnet test --no-build -c Release --verbosity normal
+
+      - name: Upload Nuget package as Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: NugetPackage
+          path: /home/runner/work/calendare.vsyntaxreader/calendare.vsyntaxreader/artifacts/package/release/*.nupkg
+          retention-days: 1

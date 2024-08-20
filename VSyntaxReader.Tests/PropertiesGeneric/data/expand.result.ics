@@ -1,0 +1,251 @@
+BEGIN:VCALENDAR
+PRODID:-//closure.ch//NONSGML Calendare//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+SUMMARY:Repeating event
+UID:complex-rrule-issue268
+DTSTART;TZID=America/New_York:20240805T091000
+DURATION:PT12M30S
+DESCRIPTION:To register your Palm handheld electronically\, you must have 
+ an Internet connection or a modem connected to your computer.\n\nThank you
+ !
+RECURRENCE-ID:20240805T131000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Repeating event
+UID:complex-rrule-issue268
+DTSTART;TZID=America/New_York:20240805T092500
+DURATION:PT12M30S
+DESCRIPTION:To register your Palm handheld electronically\, you must have 
+ an Internet connection or a modem connected to your computer.\n\nThank you
+ !
+RECURRENCE-ID:20240805T132500Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Overwritten event
+UID:complex-rrule-issue268
+DTSTART;TZID=America/New_York:20240805T094000
+DURATION:PT30M
+DESCRIPTION:Closed
+RECURRENCE-ID:20240805T134000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Repeating event
+UID:complex-rrule-issue268
+DTSTART;TZID=America/New_York:20240805T095500
+DURATION:PT12M30S
+DESCRIPTION:To register your Palm handheld electronically\, you must have 
+ an Internet connection or a modem connected to your computer.\n\nThank you
+ !
+RECURRENCE-ID:20240805T135500Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Repeating event
+UID:complex-rrule-issue268
+DTSTART;TZID=America/New_York:20240805T101000
+DURATION:PT12M30S
+DESCRIPTION:To register your Palm handheld electronically\, you must have 
+ an Internet connection or a modem connected to your computer.\n\nThank you
+ !
+RECURRENCE-ID:20240805T141000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Another overwritten event
+UID:complex-rrule-issue268
+DTSTART;TZID=America/New_York:20240805T102500
+DTEND;TZID=America/New_York:20240805T110300
+DESCRIPTION:Short break
+RECURRENCE-ID:20240805T142500Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Repeating event
+UID:complex-rrule-issue268
+DTSTART;TZID=America/New_York:20240805T104000
+DURATION:PT12M30S
+DESCRIPTION:To register your Palm handheld electronically\, you must have 
+ an Internet connection or a modem connected to your computer.\n\nThank you
+ !
+RECURRENCE-ID:20240805T144000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Repeating event
+UID:complex-rrule-issue268
+DTSTART;TZID=America/New_York:20240805T105500
+DURATION:PT7M
+DESCRIPTION:To register your Palm handheld electronically\, you must have 
+ an Internet connection or a modem connected to your computer.\n\nThank you
+ !
+RECURRENCE-ID:20240805T145500Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Repeating event
+UID:complex-rrule-issue268
+DTSTART;TZID=America/New_York:20240805T105500
+DURATION:PT12M30S
+DESCRIPTION:To register your Palm handheld electronically\, you must have 
+ an Internet connection or a modem connected to your computer.\n\nThank you
+ !
+RECURRENCE-ID:20240805T145500Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Repeating event
+UID:complex-rrule-issue268
+DTSTART;TZID=America/New_York:20240805T111000
+DURATION:PT12M30S
+DESCRIPTION:To register your Palm handheld electronically\, you must have 
+ an Internet connection or a modem connected to your computer.\n\nThank you
+ !
+RECURRENCE-ID:20240805T151000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Repeating event
+UID:complex-rrule-issue268
+DTSTART;TZID=America/New_York:20240805T112500
+DURATION:PT12M30S
+DESCRIPTION:To register your Palm handheld electronically\, you must have 
+ an Internet connection or a modem connected to your computer.\n\nThank you
+ !
+RECURRENCE-ID:20240805T152500Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Repeating event
+UID:complex-rrule-issue268
+DTSTART;TZID=America/New_York:20240805T114000
+DURATION:PT12M30S
+DESCRIPTION:To register your Palm handheld electronically\, you must have 
+ an Internet connection or a modem connected to your computer.\n\nThank you
+ !
+RECURRENCE-ID:20240805T154000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Repeating event
+UID:complex-rrule-issue268
+DTSTART;TZID=America/New_York:20240805T115500
+DURATION:PT12M30S
+DESCRIPTION:To register your Palm handheld electronically\, you must have 
+ an Internet connection or a modem connected to your computer.\n\nThank you
+ !
+RECURRENCE-ID:20240805T155500Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Repeating event
+UID:complex-rrule-issue268
+DTSTART;TZID=America/New_York:20240805T141000
+DURATION:PT12M30S
+DESCRIPTION:To register your Palm handheld electronically\, you must have 
+ an Internet connection or a modem connected to your computer.\n\nThank you
+ !
+RECURRENCE-ID:20240805T181000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Repeating event
+UID:complex-rrule-issue268
+DTSTART;TZID=America/New_York:20240805T142500
+DURATION:PT12M30S
+DESCRIPTION:To register your Palm handheld electronically\, you must have 
+ an Internet connection or a modem connected to your computer.\n\nThank you
+ !
+RECURRENCE-ID:20240805T182500Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Repeating event
+UID:complex-rrule-issue268
+DTSTART;TZID=America/New_York:20240805T144000
+DURATION:PT12M30S
+DESCRIPTION:To register your Palm handheld electronically\, you must have 
+ an Internet connection or a modem connected to your computer.\n\nThank you
+ !
+RECURRENCE-ID:20240805T184000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Repeating event
+UID:complex-rrule-issue268
+DTSTART;TZID=America/New_York:20240805T145500
+DURATION:PT12M30S
+DESCRIPTION:To register your Palm handheld electronically\, you must have 
+ an Internet connection or a modem connected to your computer.\n\nThank you
+ !
+RECURRENCE-ID:20240805T185500Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Repeating event
+UID:complex-rrule-issue268
+DTSTART;TZID=America/New_York:20240805T151000
+DURATION:PT12M30S
+DESCRIPTION:To register your Palm handheld electronically\, you must have 
+ an Internet connection or a modem connected to your computer.\n\nThank you
+ !
+RECURRENCE-ID:20240805T191000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Repeating event
+UID:complex-rrule-issue268
+DTSTART;TZID=America/New_York:20240805T152500
+DURATION:PT12M30S
+DESCRIPTION:To register your Palm handheld electronically\, you must have 
+ an Internet connection or a modem connected to your computer.\n\nThank you
+ !
+RECURRENCE-ID:20240805T192500Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Repeating event
+UID:complex-rrule-issue268
+DTSTART;TZID=America/New_York:20240805T154000
+DURATION:PT12M30S
+DESCRIPTION:To register your Palm handheld electronically\, you must have 
+ an Internet connection or a modem connected to your computer.\n\nThank you
+ !
+RECURRENCE-ID:20240805T194000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Repeating event
+UID:complex-rrule-issue268
+DTSTART;TZID=America/New_York:20240805T155500
+DURATION:PT12M30S
+DESCRIPTION:To register your Palm handheld electronically\, you must have 
+ an Internet connection or a modem connected to your computer.\n\nThank you
+ !
+RECURRENCE-ID:20240805T195500Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Repeating event
+UID:complex-rrule-issue268
+DTSTART;TZID=America/New_York:20240805T161000
+DURATION:PT12M30S
+DESCRIPTION:To register your Palm handheld electronically\, you must have 
+ an Internet connection or a modem connected to your computer.\n\nThank you
+ !
+RECURRENCE-ID:20240805T201000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Repeating event
+UID:complex-rrule-issue268
+DTSTART;TZID=America/New_York:20240805T162500
+DURATION:PT12M30S
+DESCRIPTION:To register your Palm handheld electronically\, you must have 
+ an Internet connection or a modem connected to your computer.\n\nThank you
+ !
+RECURRENCE-ID:20240805T202500Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Repeating event
+UID:complex-rrule-issue268
+DTSTART;TZID=America/New_York:20240805T164000
+DURATION:PT12M30S
+DESCRIPTION:To register your Palm handheld electronically\, you must have 
+ an Internet connection or a modem connected to your computer.\n\nThank you
+ !
+RECURRENCE-ID:20240805T204000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Repeating event
+UID:complex-rrule-issue268
+DTSTART;TZID=America/New_York:20240805T165500
+DURATION:PT12M30S
+DESCRIPTION:To register your Palm handheld electronically\, you must have 
+ an Internet connection or a modem connected to your computer.\n\nThank you
+ !
+RECURRENCE-ID:20240805T205500Z
+END:VEVENT
+END:VCALENDAR

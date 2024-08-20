@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//davical.org//NONSGML AWL Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VTIMEZONE
+TZID:America/New_York
+END:VTIMEZONE
+BEGIN:VEVENT
+SUMMARY:Repeating event
+UID:complex-rrule-issue268
+DTSTART;TZID=America/New_York:20220720T091000
+DURATION:PT12M30S
+RRULE:FREQ=MINUTELY;INTERVAL=15;BYDAY=MO,TU,WE,TH,FR;BYHOUR=9,10,11,12,13,1
+ 4,15,16
+DESCRIPTION:To register your Palm handheld electronically\, you must have 
+ an Internet connection or a modem connected to your computer.\n\nThank you
+ !
+END:VEVENT
+END:VCALENDAR

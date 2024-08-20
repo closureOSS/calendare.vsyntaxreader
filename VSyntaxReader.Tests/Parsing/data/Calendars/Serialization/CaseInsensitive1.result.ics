@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+METHOD:PUBLISH
+BEGIN:VEVENT
+DTSTART:20070606T213000Z
+DTEND:20070606T224500Z
+UID:1032340930
+DTSTAMP:20070526T025824Z
+DESCRIPTION:Thank you for your interest in Microsoft Events. We would like 
+ to remind you of the following event: MSDN Webcast: Building Microsoft Win
+ dows Communication Foundation and Windows Workflow Foundation Applications
+  with Microsoft Visual Studio Codename "Orcas" (Level 300). \n\nPlease rev
+ iew the information below.\n\nEvent Code: 1032340930\nEvent Name: MSDN Web
+ cast: Building Microsoft Windows Communication Foundation and Windows Work
+ flow Foundation Applications with Microsoft Visual Studio Codename "Orcas"
+  (Level 300)\nStart Date: 6/6/2007\nStart Time: 2:30 PM (GMT-08:00) Pacifi
+ c Time (US & Canada)\nEnd Date: 6/6/2007\nEnd Time: 3:45 PM (GMT-08:00) Pa
+ cific Time (US & Canada)\n\nPlease click on the following link for more in
+ formation regarding this Event https://msevents.microsoft.com/cui/r.aspx?r
+ =1290603960&c=en-US&t=2. We look forward to seeing you at the Event!
+SUMMARY:Live Webcast - MSDN Webcast: Building Microsoft Windows Communicati
+ on Foundation and Windows Workflow Foundation Applications with Microsoft 
+ Visual Studio Codename "Orcas" (Level 300)
+PRIORITY:3
+BEGIN:VALARM
+TRIGGER:P0DT0H15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

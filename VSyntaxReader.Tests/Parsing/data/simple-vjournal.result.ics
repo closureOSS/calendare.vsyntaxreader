@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:DAVx5/4.4.2-ose ical4j/3.2.19 (at.techbee.jtx)
+BEGIN:VJOURNAL
+DTSTAMP:20240813T060326Z
+UID:3f15db40-02a7-41cd-a4c3-ba10ca04738b
+SEQUENCE:16
+CREATED:20240813T045312Z
+LAST-MODIFIED:20240813T045451Z
+SUMMARY:A journal entry
+DESCRIPTION:\n# have a good day \n\n## with the software that you are using
+  \n\nAnd yes we can do that with the software that you are using just now
+STATUS:FINAL
+DTSTART;VALUE=DATE:20240813
+END:VJOURNAL
+END:VCALENDAR
