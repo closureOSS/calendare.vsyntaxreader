@@ -26,28 +26,11 @@ jobs:
           dotnet-version: 9.x
           cache: true
           cache-dependency-path: '**/packages.lock.json'
-        env:
-          NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
       - uses: dotnet/nbgv@v0.4.2
         id: nbgv
         with:
           setAllVars: true
-
-      - name: Create and push tag
-        run: |
-          echo "${{ steps.nbgv.outputs.SemVer2 }}"
-          git tag "${{ steps.nbgv.outputs.SemVer2 }}"
-          git push origin "${{ steps.nbgv.outputs.SemVer2 }}"
-
-      # Get previous tag of the current release stream (x.y.z) for changelog
-      # HINT: for last tag use .SemVer2 instead filtering all pre-release tags (with hypen)
-      - name: Get Previous Tag
-        id: previous_tag
-        run: |
-          PREV=$(git tag --sort=-creatordate | grep -v -e "-" | head -n 1)
-          echo "${PREV} to ${{ steps.nbgv.outputs.SemVer2 }}"
-          echo "tag=$PREV" >> $GITHUB_OUTPUT
 
       - name: Restore dependencies
         run: dotnet restore --locked-mode
@@ -57,6 +40,21 @@ jobs:
 
       - name: Test
         run: dotnet test --no-build -c Release --verbosity normal
+
+      # Get previous tag of the release stream (x.y.z) for changelog
+      # HINT: for last tag use .SemVer2 instead filtering all pre-release tags (with hyphen)
+      - name: Get Previous Tag
+        id: previous_tag
+        run: |
+          PREV=$(git tag --sort=-creatordate | grep -v -e "-" | head -n 1)
+          echo "${PREV} to ${{ steps.nbgv.outputs.SemVer2 }}"
+          echo "tag=$PREV" >> $GITHUB_OUTPUT
+
+      - name: Create and push tag
+        run: |
+          echo "${{ steps.nbgv.outputs.SemVer2 }}"
+          git tag "${{ steps.nbgv.outputs.SemVer2 }}"
+          git push origin "${{ steps.nbgv.outputs.SemVer2 }}"
 
       - name: Publish the package to NUGET
         run: dotnet nuget push ./artifacts/package/release/*.nupkg --source https://api.nuget.org/v3/index.json --api-key $NUGET_AUTH_TOKEN  --skip-duplicate
@@ -125,7 +123,7 @@ jobs:
           target_commitish: ${{ github.ref }}
           # generate_release_notes: true
           body: ${{steps.github_release.outputs.changelog}}
-          files: ./artifacts/package/release/*.nupkg
+          files: ./artifacts/package/release/*nupkg
           prerelease: ${{ contains(steps.nbgv.outputs.SemVer2, '-') }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

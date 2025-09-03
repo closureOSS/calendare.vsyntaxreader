@@ -7,12 +7,12 @@
         </PackageReference>
     </ItemGroup>
     <PropertyGroup>
-        <UseArtifactsOutput>true</UseArtifactsOutput>
         <Company>closure.ch</Company>
         <Copyright>© 2024-2025 Robert Bill</Copyright>
         <Authors>Robert Bill</Authors>
     </PropertyGroup>
     <PropertyGroup>
+        <UseArtifactsOutput>true</UseArtifactsOutput>
         <DisableImplicitNuGetFallbackFolder>true</DisableImplicitNuGetFallbackFolder>
         <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
     </PropertyGroup>

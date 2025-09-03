@@ -1,21 +1,30 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
+        <Description>Library to parse and manipulate ICS files based on RFC5545</Description>
+        <Product>Calendare VSyntax Library</Product>
         <TargetFramework>net9.0</TargetFramework>
         <Nullable>enable</Nullable>
         <AssemblyName>Calendare.VSyntaxReader</AssemblyName>
         <RootNamespace>Calendare.VSyntaxReader</RootNamespace>
+    </PropertyGroup>
+    <PropertyGroup>
         <PackageId>ClosureOSS.Calendare.VSyntaxReader</PackageId>
-        <Description>Library to parse and manipulate ICS files based on RFC5545</Description>
-        <Product>Calendare VSyntax Library</Product>
         <IsPackable>true</IsPackable>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
-        <RepositoryUrl>https://github.com/closureOSS/calendare.vsyntaxreader</RepositoryUrl>
         <PackageTags>calendar scheduling iCalendar ical parser rrule availability rfc5545 rfc7986 rfc7953 rfc9073</PackageTags>
-        <PublishRepositoryUrl>true</PublishRepositoryUrl>
         <IncludeSymbols>true</IncludeSymbols>
         <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+        <PackageProjectUrl>https://github.com/closureOSS/calendare.vsyntaxreader</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/closureOSS/calendare.vsyntaxreader</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)'!='Debug'">
+        <DeterministicSourcePaths>true</DeterministicSourcePaths>
+        <EmbedUntrackedSources>true</EmbedUntrackedSources>
+        <PathMap>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)'))=./</PathMap>
     </PropertyGroup>
     <ItemGroup>
         <None Include="../LICENSE" Pack="true" PackagePath="" />
@@ -26,10 +35,4 @@
         <PackageReference Include="NodaTime" Version="3.2.2" />
         <PackageReference Include="NodaTime.Serialization.SystemTextJson" Version="1.3.0" />
     </ItemGroup>
-    <PropertyGroup>
-        <Deterministic>true</Deterministic>
-        <DeterministicSourcePaths>true</DeterministicSourcePaths>
-        <EmbedUntrackedSources>true</EmbedUntrackedSources>
-        <PathMap>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)'))=./</PathMap>
-    </PropertyGroup>
 </Project>
