@@ -25,6 +25,7 @@ jobs:
         with:
           dotnet-version: 9.x
           cache: true
+          cache-dependency-path: '**/packages.lock.json'
         env:
           NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
 

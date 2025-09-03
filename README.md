@@ -1,6 +1,6 @@
 # Library to parse and manipulate ICS files based on RFC5545
 
-[![Build](https://github.com/closureOSS/calendare.vsyntaxreader/actions/workflows/dotnet.yml/badge.svg)](https://github.com/closureOSS/calendare.vsyntaxreader/actions/workflows/dotnet.yml)
+[![🏭 Build](https://github.com/closureOSS/calendare.vsyntaxreader/actions/workflows/dotnet.yml/badge.svg)](https://github.com/closureOSS/calendare.vsyntaxreader/actions/workflows/dotnet.yml)
 
 # Why
 
