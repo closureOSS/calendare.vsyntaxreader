@@ -4,13 +4,13 @@
 
 # Why
 
-We developed this new C# library specifically for reading and manipulating RFC5545 iCalendar (ICS) files, with a primary focus on **server-side applications**, such as calendar servers.  Our goal was to create a robust and permissive library that can handle the many quirks and non-compliant behaviors of various calendar clients in the wild.
+This C# library was specifically developed for reading and manipulating RFC5545 iCalendar (ICS) files, with a primary focus on **server-side applications**, such as calendar servers.  The goal was to create a robust and permissive library that can handle the many quirks and non-compliant behaviors of various calendar clients in the wild.
 
 * Permissive Parsing: The library is built to be tolerant of malformed or non-standard ICS data, allowing it to successfully parse files from as many different clients as possible.
 
 * Timezone Handling: Accurate handling of timezones is crucial for international scheduling. This library includes a dedicated and robust system for processing timezone definitions to ensure events are displayed correctly for users across the globe.
 
-* Modern Feature Support: This includes VAvailability (RFC 7953), which is helpful for free/busy scheduling, and VPoll (RFC 9073), which enables calendar-based polling and voting features.
+* Modern Feature Support: This includes support for the components VAvailability (RFC 7953), which is helpful for free/busy scheduling, and VPoll (RFC 9073), which enables calendar-based polling and voting features.
 
 * This library is not intended for client-side use, such as creating new events or managing a user's local calendar.
 
@@ -37,6 +37,8 @@ dotnet add package ClosureOSS.Calendare.VSyntaxReader
 - [New Properties for iCalendar](https://datatracker.ietf.org/doc/html/rfc7986)
 
 ## RFC's under consideration
+
+- currently none
 
 ## Not supported RFC's
 
