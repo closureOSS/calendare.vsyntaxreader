@@ -2,7 +2,7 @@
     <PropertyGroup>
         <Description>Library to parse and manipulate ICS files based on RFC5545</Description>
         <Product>Calendare VSyntax Library</Product>
-        <TargetFramework>net9.0</TargetFramework>
+        <TargetFramework>net10.0</TargetFramework>
         <Nullable>enable</Nullable>
         <AssemblyName>Calendare.VSyntaxReader</AssemblyName>
         <RootNamespace>Calendare.VSyntaxReader</RootNamespace>
