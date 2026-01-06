@@ -81,7 +81,7 @@ public class DateTimeProperty : IProperty, IPropertyClone<DateTimeProperty>, IPr
 
     public string Serialize()
     {
-        return DateTimePropertyHelper.Serialize(Raw, DataType, DefaultDataType, [Value], IsValid);
+        return DateTimePropertyHelper.Serialize(Raw, DataType, DefaultDataType, Value is not null ? [Value] : [], IsValid);
     }
 
     public IProperty DeepClone() => Copy();
