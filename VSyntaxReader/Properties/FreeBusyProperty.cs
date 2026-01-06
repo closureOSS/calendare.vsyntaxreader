@@ -33,7 +33,7 @@ public class FreeBusyProperty : IProperty
     public DeserializeResult Deserialize(ICalendarComponent calendarComponent)
     {
         Value = new CaldavFreeBusy();
-        List<string> values = [Raw.Value];
+        List<string> values = [];
         if (Raw.Value is not null)
         {
             values = [.. Raw.Value.Split(',')];

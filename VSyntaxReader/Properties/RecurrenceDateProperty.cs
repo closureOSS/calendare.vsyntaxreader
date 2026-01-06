@@ -87,7 +87,7 @@ public class RecurrenceDateProperty : IProperty, IPropertyTimezoneId
             return hasValidTimezone;
         }
 
-        List<string> values = [Raw.Value];
+        List<string> values = [];
         var deserializeResult = new DeserializeResult(true);
         if (Raw.Value is not null)
         {
