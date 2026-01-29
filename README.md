@@ -22,6 +22,10 @@ Installation is simple, just install via
 dotnet add package ClosureOSS.Calendare.VSyntaxReader
 ~~~
 
+# Usage
+
+Refer to the examples in the VSyntaxReader.Examples folder.
+
 # Scope
 
 ## Supported RFC's

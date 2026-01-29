@@ -31,7 +31,7 @@
         <None Include="../README.md" Pack="true" PackagePath="\" />
     </ItemGroup>
     <ItemGroup>
-        <PackageReference Include="LinkDotNet.StringBuilder" Version="3.2.0" />
+        <PackageReference Include="LinkDotNet.StringBuilder" Version="3.3.0" />
         <PackageReference Include="NodaTime" Version="3.3.0" />
         <PackageReference Include="NodaTime.Serialization.SystemTextJson" Version="1.3.0" />
     </ItemGroup>

@@ -4,9 +4,9 @@
     "net10.0": {
       "LinkDotNet.StringBuilder": {
         "type": "Direct",
-        "requested": "[3.2.0, )",
-        "resolved": "3.2.0",
-        "contentHash": "lCVle+mEP4RKmsvWYLsXC3aR3byETFej3HN/L2xQ5yPIK/lzTjtWHLMObk90/9mbeOnv2cooWBtMVEMNh8aM/g=="
+        "requested": "[3.3.0, )",
+        "resolved": "3.3.0",
+        "contentHash": "WtPuxOokoW4n867vlcy7oL2JWclsBWfDl7N7KYuTlI48IXqOtf6knxtYO4ldJeDUGc8AHt9gvATaKyU4YhlRGA=="
       },
       "Nerdbank.GitVersioning": {
         "type": "Direct",
@@ -33,9 +33,9 @@
     "net8.0": {
       "LinkDotNet.StringBuilder": {
         "type": "Direct",
-        "requested": "[3.2.0, )",
-        "resolved": "3.2.0",
-        "contentHash": "lCVle+mEP4RKmsvWYLsXC3aR3byETFej3HN/L2xQ5yPIK/lzTjtWHLMObk90/9mbeOnv2cooWBtMVEMNh8aM/g=="
+        "requested": "[3.3.0, )",
+        "resolved": "3.3.0",
+        "contentHash": "WtPuxOokoW4n867vlcy7oL2JWclsBWfDl7N7KYuTlI48IXqOtf6knxtYO4ldJeDUGc8AHt9gvATaKyU4YhlRGA=="
       },
       "Nerdbank.GitVersioning": {
         "type": "Direct",
@@ -62,9 +62,9 @@
     "net9.0": {
       "LinkDotNet.StringBuilder": {
         "type": "Direct",
-        "requested": "[3.2.0, )",
-        "resolved": "3.2.0",
-        "contentHash": "lCVle+mEP4RKmsvWYLsXC3aR3byETFej3HN/L2xQ5yPIK/lzTjtWHLMObk90/9mbeOnv2cooWBtMVEMNh8aM/g=="
+        "requested": "[3.3.0, )",
+        "resolved": "3.3.0",
+        "contentHash": "WtPuxOokoW4n867vlcy7oL2JWclsBWfDl7N7KYuTlI48IXqOtf6knxtYO4ldJeDUGc8AHt9gvATaKyU4YhlRGA=="
       },
       "Nerdbank.GitVersioning": {
         "type": "Direct",

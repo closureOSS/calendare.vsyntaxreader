@@ -10,8 +10,8 @@
       },
       "LinkDotNet.StringBuilder": {
         "type": "Transitive",
-        "resolved": "3.2.0",
-        "contentHash": "lCVle+mEP4RKmsvWYLsXC3aR3byETFej3HN/L2xQ5yPIK/lzTjtWHLMObk90/9mbeOnv2cooWBtMVEMNh8aM/g=="
+        "resolved": "3.3.0",
+        "contentHash": "WtPuxOokoW4n867vlcy7oL2JWclsBWfDl7N7KYuTlI48IXqOtf6knxtYO4ldJeDUGc8AHt9gvATaKyU4YhlRGA=="
       },
       "NodaTime": {
         "type": "Transitive",
@@ -29,7 +29,7 @@
       "ClosureOSS.Calendare.VSyntaxReader": {
         "type": "Project",
         "dependencies": {
-          "LinkDotNet.StringBuilder": "[3.2.0, )",
+          "LinkDotNet.StringBuilder": "[3.3.0, )",
           "NodaTime": "[3.3.0, )",
           "NodaTime.Serialization.SystemTextJson": "[1.3.0, )"
         }
