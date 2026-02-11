@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using Calendare.VSyntaxReader.Components;
-using Calendare.VSyntaxReader.Models;
+﻿using Calendare.VSyntaxReader.Components;
 using Calendare.VSyntaxReader.Operations;
 using Calendare.VSyntaxReader.Properties;
-using NodaTime;
 using Xunit.Abstractions;
 
 namespace VSyntaxReader.Tests.PropertiesGeneric;

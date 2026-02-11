@@ -22,7 +22,7 @@ public interface IProperty
         sb.Append(Raw.Value);
         if (!IsValid)
         {
-            sb.Append($" ###ERR");
+            sb.Append(" ###ERR");
         }
         return sb.ToString().WrapLine();
     }

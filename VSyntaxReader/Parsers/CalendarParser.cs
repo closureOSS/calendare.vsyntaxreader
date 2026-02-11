@@ -8,7 +8,7 @@ using Calendare.VSyntaxReader.Properties;
 
 namespace Calendare.VSyntaxReader.Parsers;
 
-public class CalendarParser : ICalendarParser
+public sealed class CalendarParser : ICalendarParser
 {
     private readonly CalendarBuilder Builder;
 

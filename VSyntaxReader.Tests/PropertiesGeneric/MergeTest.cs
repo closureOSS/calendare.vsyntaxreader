@@ -1,5 +1,4 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using Calendare.VSyntaxReader.Components;
 using Calendare.VSyntaxReader.Models;
 using Calendare.VSyntaxReader.Properties;

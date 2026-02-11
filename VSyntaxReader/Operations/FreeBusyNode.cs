@@ -5,7 +5,7 @@ using NodaTime;
 
 namespace Calendare.VSyntaxReader.Operations;
 
-public class FreeBusyList : LinkedList<FreeBusyEntry>
+sealed class FreeBusyList : LinkedList<FreeBusyEntry>
 {
 
     public bool Insert(Interval period, FreeBusyStatus status, bool punching = false, int priority = 0)

@@ -2,7 +2,7 @@
 
 namespace Calendare.VSyntaxReader.Models;
 
-public class FreeBusyEntry
+public sealed class FreeBusyEntry
 {
     public FreeBusyStatus Status { get; set; } = FreeBusyStatus.Busy;
     public Interval Period { get; set; }
