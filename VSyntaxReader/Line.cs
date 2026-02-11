@@ -1,6 +1,6 @@
 ﻿namespace Calendare.VSyntaxReader;
 
-public class Line
+sealed class Line
 {
     public required string Raw { get; set; }
     public int LineNo { get; set; }

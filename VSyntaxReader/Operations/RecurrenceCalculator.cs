@@ -7,7 +7,7 @@ using NodaTime.Calendars;
 
 namespace Calendare.VSyntaxReader.Operations;
 
-public class RecurrenceCalculator
+public sealed class RecurrenceCalculator
 {
     public CaldavRecurrence Rule { get; init; }
     public ZonedDateTime ReferenceDate { get; private set; }

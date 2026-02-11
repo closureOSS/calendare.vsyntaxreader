@@ -3,7 +3,7 @@ using LinkDotNet.StringBuilder;
 
 namespace Calendare.VSyntaxReader;
 
-public static class SerializeExtensions
+static class SerializeExtensions
 {
     public const int MaxCharactersPerLine = 75;
     public const string LineBreak = "\r\n";

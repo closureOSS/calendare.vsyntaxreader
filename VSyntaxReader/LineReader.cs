@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Calendare.VSyntaxReader;
 
-public class LineReader
+sealed class LineReader
 {
     private readonly Stream Stream;
     private readonly int BufferSize = 256;

@@ -8,7 +8,7 @@ namespace Calendare.VSyntaxReader.Parsers;
 /// <summary>
 /// Original source for regex expressions and comments is Ical.Net \src\Ical.Net\Serialization\SimpleDeserializer.cs
 /// </summary>
-public partial class LineParser
+partial class LineParser
 {
     private const string NameGroup = "name";
     private const string ValueGroup = "value";
