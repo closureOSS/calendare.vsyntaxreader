@@ -4,9 +4,9 @@
     "net10.0": {
       "LinkDotNet.StringBuilder": {
         "type": "Direct",
-        "requested": "[3.3.0, )",
-        "resolved": "3.3.0",
-        "contentHash": "WtPuxOokoW4n867vlcy7oL2JWclsBWfDl7N7KYuTlI48IXqOtf6knxtYO4ldJeDUGc8AHt9gvATaKyU4YhlRGA=="
+        "requested": "[3.4.1, )",
+        "resolved": "3.4.1",
+        "contentHash": "TnivM7AvNhIVLnJxir5tzl90GN9PAYzigGqv3ZXGg1+5HY1gj8XrUjCNoUYrUcm/UjozlOs4rENV41EqWyFPZg=="
       },
       "Nerdbank.GitVersioning": {
         "type": "Direct",
@@ -16,9 +16,9 @@
       },
       "NodaTime": {
         "type": "Direct",
-        "requested": "[3.3.0, )",
-        "resolved": "3.3.0",
-        "contentHash": "zmUEQPp9yXyGAqWSBhxfwdDhRh4EV04lvYn4P5bUb6dTz1m5AXTYaeSLQ447YLPI2Ge5VGFj20G2DWg5gtiXZg=="
+        "requested": "[3.3.1, )",
+        "resolved": "3.3.1",
+        "contentHash": "7zkTEqmakybTTuDuifpnzl5s8MkmpAdyvoqIPIO2+M2ThF8ixavPcPt1afPfFyCI+A6t3ySujgpGq/5iWc4/RQ=="
       },
       "NodaTime.Serialization.SystemTextJson": {
         "type": "Direct",
@@ -33,9 +33,9 @@
     "net8.0": {
       "LinkDotNet.StringBuilder": {
         "type": "Direct",
-        "requested": "[3.3.0, )",
-        "resolved": "3.3.0",
-        "contentHash": "WtPuxOokoW4n867vlcy7oL2JWclsBWfDl7N7KYuTlI48IXqOtf6knxtYO4ldJeDUGc8AHt9gvATaKyU4YhlRGA=="
+        "requested": "[3.4.1, )",
+        "resolved": "3.4.1",
+        "contentHash": "TnivM7AvNhIVLnJxir5tzl90GN9PAYzigGqv3ZXGg1+5HY1gj8XrUjCNoUYrUcm/UjozlOs4rENV41EqWyFPZg=="
       },
       "Nerdbank.GitVersioning": {
         "type": "Direct",
@@ -45,9 +45,9 @@
       },
       "NodaTime": {
         "type": "Direct",
-        "requested": "[3.3.0, )",
-        "resolved": "3.3.0",
-        "contentHash": "zmUEQPp9yXyGAqWSBhxfwdDhRh4EV04lvYn4P5bUb6dTz1m5AXTYaeSLQ447YLPI2Ge5VGFj20G2DWg5gtiXZg=="
+        "requested": "[3.3.1, )",
+        "resolved": "3.3.1",
+        "contentHash": "7zkTEqmakybTTuDuifpnzl5s8MkmpAdyvoqIPIO2+M2ThF8ixavPcPt1afPfFyCI+A6t3ySujgpGq/5iWc4/RQ=="
       },
       "NodaTime.Serialization.SystemTextJson": {
         "type": "Direct",
@@ -62,9 +62,9 @@
     "net9.0": {
       "LinkDotNet.StringBuilder": {
         "type": "Direct",
-        "requested": "[3.3.0, )",
-        "resolved": "3.3.0",
-        "contentHash": "WtPuxOokoW4n867vlcy7oL2JWclsBWfDl7N7KYuTlI48IXqOtf6knxtYO4ldJeDUGc8AHt9gvATaKyU4YhlRGA=="
+        "requested": "[3.4.1, )",
+        "resolved": "3.4.1",
+        "contentHash": "TnivM7AvNhIVLnJxir5tzl90GN9PAYzigGqv3ZXGg1+5HY1gj8XrUjCNoUYrUcm/UjozlOs4rENV41EqWyFPZg=="
       },
       "Nerdbank.GitVersioning": {
         "type": "Direct",
@@ -74,9 +74,9 @@
       },
       "NodaTime": {
         "type": "Direct",
-        "requested": "[3.3.0, )",
-        "resolved": "3.3.0",
-        "contentHash": "zmUEQPp9yXyGAqWSBhxfwdDhRh4EV04lvYn4P5bUb6dTz1m5AXTYaeSLQ447YLPI2Ge5VGFj20G2DWg5gtiXZg=="
+        "requested": "[3.3.1, )",
+        "resolved": "3.3.1",
+        "contentHash": "7zkTEqmakybTTuDuifpnzl5s8MkmpAdyvoqIPIO2+M2ThF8ixavPcPt1afPfFyCI+A6t3ySujgpGq/5iWc4/RQ=="
       },
       "NodaTime.Serialization.SystemTextJson": {
         "type": "Direct",
