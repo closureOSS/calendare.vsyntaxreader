@@ -1,6 +1,9 @@
 # Library to parse and manipulate ICS files based on RFC5545
 
 [![🏭 Build](https://github.com/closureOSS/calendare.vsyntaxreader/actions/workflows/dotnet.yml/badge.svg)](https://github.com/closureOSS/calendare.vsyntaxreader/actions/workflows/dotnet.yml)
+![Release](https://img.shields.io/github/v/release/closureOSS/calendare.vsyntaxreader)
+![NuGet Version](https://img.shields.io/nuget/v/ClosureOSS.Calendare.VSyntaxReader)
+
 
 # Why
 
@@ -54,7 +57,7 @@ Refer to the examples in the VSyntaxReader.Examples folder.
 
 ## Testcases (ICS files)
 
-The test ICS files, in the ./data/ subdirectories, are largely derived from [Ical.Net](https://github.com/ical-org/ical.net) version 4 (circa February 2023). Ical.Net's test cases were originally created for the [libical project](https://github.com/libical/libical).
+The test ICS files, in the ./data/ subdirectories, are largely derived from [Ical.Net](https://github.com/ical-org/ical.net) version 4 (around February 2023). Ical.Net's test cases were originally created for the [libical project](https://github.com/libical/libical).
 
 Some test ICS files where originally created for [DAViCal](https://gitlab.com/davical-project/davical).
 

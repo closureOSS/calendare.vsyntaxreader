@@ -10,13 +10,13 @@
       },
       "LinkDotNet.StringBuilder": {
         "type": "Transitive",
-        "resolved": "3.3.0",
-        "contentHash": "WtPuxOokoW4n867vlcy7oL2JWclsBWfDl7N7KYuTlI48IXqOtf6knxtYO4ldJeDUGc8AHt9gvATaKyU4YhlRGA=="
+        "resolved": "3.4.1",
+        "contentHash": "TnivM7AvNhIVLnJxir5tzl90GN9PAYzigGqv3ZXGg1+5HY1gj8XrUjCNoUYrUcm/UjozlOs4rENV41EqWyFPZg=="
       },
       "NodaTime": {
         "type": "Transitive",
-        "resolved": "3.3.0",
-        "contentHash": "zmUEQPp9yXyGAqWSBhxfwdDhRh4EV04lvYn4P5bUb6dTz1m5AXTYaeSLQ447YLPI2Ge5VGFj20G2DWg5gtiXZg=="
+        "resolved": "3.3.1",
+        "contentHash": "7zkTEqmakybTTuDuifpnzl5s8MkmpAdyvoqIPIO2+M2ThF8ixavPcPt1afPfFyCI+A6t3ySujgpGq/5iWc4/RQ=="
       },
       "NodaTime.Serialization.SystemTextJson": {
         "type": "Transitive",
@@ -29,8 +29,8 @@
       "ClosureOSS.Calendare.VSyntaxReader": {
         "type": "Project",
         "dependencies": {
-          "LinkDotNet.StringBuilder": "[3.3.0, )",
-          "NodaTime": "[3.3.0, )",
+          "LinkDotNet.StringBuilder": "[3.4.1, )",
+          "NodaTime": "[3.3.1, )",
           "NodaTime.Serialization.SystemTextJson": "[1.3.1, )"
         }
       }
