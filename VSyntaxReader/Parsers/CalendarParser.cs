@@ -141,10 +141,11 @@ public sealed class CalendarParser : ICalendarParser
             else
             {
                 vcalendar = null;
-                return new DeserializeResult(false, $"{line.LineNo:0000}: ERROR {line.Raw} [{line.PhysicalLineCount}-{line.PhysicalLineNo + line.PhysicalLineCount}]");
+                var errCategory = line.LineNo != 0 ? DeserializeErrorCategory.Syntax : DeserializeErrorCategory.WrongFormat;
+                return new DeserializeResult(false, $"{line.LineNo:0000}: ERROR {line.Raw} [{line.PhysicalLineCount}-{line.PhysicalLineNo + line.PhysicalLineCount}]", errCategory);
             }
         }
         lineReader.Close();
-        return vcalendar is not null ? new DeserializeResult(true) : new DeserializeResult(false, "Nothing to parse");
+        return vcalendar is not null ? new DeserializeResult(true) : new DeserializeResult(false, "Nothing to parse", DeserializeErrorCategory.NoContent);
     }
 }
