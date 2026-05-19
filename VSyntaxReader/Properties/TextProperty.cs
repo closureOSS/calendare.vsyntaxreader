@@ -23,16 +23,15 @@ public class TextProperty : IProperty
             }
             if (Raw.Parameters.TryFindOneParameter(EncodingParam, out var encoding))
             {
-                switch (encoding.Value)
+                return encoding.Value switch
                 {
-                    case "BASE64":
-                        return Encoding.UTF8.GetString(Convert.FromBase64String(Raw.Value));
-                    default:
-                        return null;  // NOT VALID AS ENCODING METHOD NOT SUPPORTED
-                }
+                    "BASE64" => Encoding.UTF8.GetString(Convert.FromBase64String(Raw.Value)),
+                    _ => null,// NOT VALID AS ENCODING METHOD NOT SUPPORTED
+                };
             }
             return EscapingExtensions.UnescapeText(Raw.Value);
         }
+
         set
         {
             Raw = Raw with { Value = EscapingExtensions.EscapeText(value) };

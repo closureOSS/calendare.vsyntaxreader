@@ -2,8 +2,9 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     <PropertyGroup>
         <Company>closure.ch</Company>
-        <Copyright>© 2024-2026 Robert Bill</Copyright>
+        <Copyright>© 2024-2026 Closure OSS Contributors</Copyright>
         <Authors>Robert Bill</Authors>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
     </PropertyGroup>
     <PropertyGroup>
         <UseArtifactsOutput>true</UseArtifactsOutput>

@@ -1,4 +1,5 @@
 ﻿using Calendare.VSyntaxReader.Components;
+using Calendare.VSyntaxReader.Properties;
 using Xunit.Abstractions;
 
 namespace VSyntaxReader.Tests.Parsing;
@@ -50,6 +51,22 @@ public class ParsingTest
             FileExtensions.WriteFileAsString(content, verificationFilename);
         }
     }
+
+    [Theory]
+    [InlineData("wrong-mixed-format.ics", DeserializeErrorCategory.Syntax)]
+    [InlineData("wrong-file-format.json", DeserializeErrorCategory.WrongFormat)]
+    [InlineData("wrong-file-format-long.ics", DeserializeErrorCategory.WrongFormat)]
+    [InlineData("empty.ics", DeserializeErrorCategory.NoContent)]
+    [InlineData("empty-long.ics", DeserializeErrorCategory.NoContent)]
+    public void ParseInvalidData(string filename, DeserializeErrorCategory errorCategory)
+    {
+        var sourceFilename = FileExtensions.BuildSourceFilename(filename);
+        var parseResult = Builder.Parser.TryParseFile(sourceFilename, out var vcalendar);
+        Assert.Null(vcalendar);
+        Assert.False(parseResult.Success, parseResult.ErrorMessage);
+        Assert.Equal(errorCategory, parseResult.ErrorCategory);
+    }
+
 
     [Theory]
     [InlineData("Calendars/Alarm/ALARM1.ics")]
