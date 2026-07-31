@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
+using System.Text;
 using LinkDotNet.StringBuilder;
 
 namespace Calendare.VSyntaxReader.Properties;
@@ -103,10 +104,34 @@ public static class ParameterExtensions
 
     public static string Unescape(string value)
     {
-        var escapedParam = value;
-        escapedParam = escapedParam.Replace("^'", "\"");
-        escapedParam = escapedParam.Replace("^n", "\n");
-        escapedParam = escapedParam.Replace("^^", "^");
-        return escapedParam;
+        // https://datatracker.ietf.org/doc/html/rfc6868#section-3
+        var unescaped = new StringBuilder(value.Length);
+        for (var i = 0; i < value.Length; i++)
+        {
+            if (value[i] == '^' && i + 1 < value.Length)
+            {
+                var next = value[++i];
+                switch (next)
+                {
+                    case '^':
+                        unescaped.Append('^');
+                        break;
+                    case 'n':
+                        unescaped.Append('\n');
+                        break;
+                    case '\'':
+                        unescaped.Append('"');
+                        break;
+                    default:
+                        unescaped.Append('^').Append(next);
+                        break;
+                }
+            }
+            else
+            {
+                unescaped.Append(value[i]);
+            }
+        }
+        return unescaped.ToString();
     }
 }

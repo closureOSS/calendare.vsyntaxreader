@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics.CodeAnalysis;
+using System.Text;
 
 namespace Calendare.VSyntaxReader.Properties;
 
@@ -27,13 +28,34 @@ public static class EscapingExtensions
         {
             return null;
         }
-        var unescaped = value;
         // https://datatracker.ietf.org/doc/html/rfc5545#section-3.3.11
-        unescaped = unescaped.Replace("\\\\", "\\");
-        unescaped = unescaped.Replace("\\n", "\n");
-        unescaped = unescaped.Replace("\\N", "\n");
-        unescaped = unescaped.Replace("\\;", ";");
-        unescaped = unescaped.Replace("\\,", ",");
-        return unescaped;
+        var unescaped = new StringBuilder(value.Length);
+        for (var i = 0; i < value.Length; i++)
+        {
+            if (value[i] == '\\' && i + 1 < value.Length)
+            {
+                var next = value[++i];
+                switch (next)
+                {
+                    case 'n':
+                    case 'N':
+                        unescaped.Append('\n');
+                        break;
+                    case '\\':
+                    case ';':
+                    case ',':
+                        unescaped.Append(next);
+                        break;
+                    default:
+                        unescaped.Append('\\').Append(next);
+                        break;
+                }
+            }
+            else
+            {
+                unescaped.Append(value[i]);
+            }
+        }
+        return unescaped.ToString();
     }
 }
