@@ -18,7 +18,7 @@
         "type": "Direct",
         "requested": "[10.0.10, )",
         "resolved": "10.0.10",
-        "contentHash": "f5VCIE7AJpd5YvzNTeMGVzQIgyE9tX+AreTYwQF+REbu+DZo/2Ae+jNSwhPEYrVz6RRkd7y8ubXjk6Nn6Ka+Cg=="
+        "contentHash": "USPlGK4SzGfR2gy8h4lZ54e9hHBJpPiaPn86f1jEuRmu92/T+DGiexDbPpRBQzNVSJtCW6VR0q2VslLbchrrnA=="
       },
       "NodaTime": {
         "type": "Direct",
